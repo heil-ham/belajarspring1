@@ -1,2 +1,24 @@
-package com.belajar.belajarspring.service;public class ProductService {
+package com.belajar.belajarspring.service;
+
+import com.belajar.belajarspring.repository.ProductRepository;
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ProductService {
+
+    @Getter
+    private ProductRepository productRepository;
+
+    @Autowired
+    public ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
+    public ProductService(ProductRepository productRepository, String name) {
+        this.productRepository = productRepository;
+    }
+
+
 }

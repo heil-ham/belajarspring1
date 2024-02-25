@@ -1,4 +1,4 @@
-package com.belajar.belajarspring;
+package com.belajar.belajarspring.configuration;
 
 import com.belajar.belajarspring.data.Dog;
 import lombok.extern.slf4j.Slf4j;

@@ -1,2 +1,7 @@
-package com.belajar.belajarspring.repository;public class ProductRepository {
+package com.belajar.belajarspring.repository;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ProductRepository {
 }
